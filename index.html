@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+			rel="stylesheet">
+
+</head>
+
+<body class="body">
+<header class="header">
+	<div class="header-top-block">
+		<a href="javascript:void(0)" class="header-top-block__burger" data-status="close">
+			<span></span>
+			<span></span>
+			<span></span>
+		</a>
+		<div class="header-top-block__logo"><img src="img/logo_site-logo.svg"/></div>
+		<a href="javascript:void(0)" class="header-top-block__help" data-status="close"><img src="img/ic_help.svg"/></a>
+	</div>
+
+	<ul class="header__main-menu" style="display: none">
+		<li class="mein-menu__section"><h5>ЛИЧНЫЙ КАБИНЕТ</h5></li>
+		<li class="main-menu__link open-popup" ><a href="#authForm">Вход в Личный кабинет</a></li>
+		<li class="mein-menu__section"><h5>КАК ЭТО РАБОТАЕТ</h5></li>
+		<li class="main-menu__link"><a href="javascript:void(0)">Условия использования сервиса</a></li>
+		<li class="main-menu__link"><a href="javascript:void(0)">Способы оплаты</a></li>
+		<li class="main-menu__link"><a href="javascript:void(0)">Часто задаваемые вопросы</a></li>
+		<li class="main-menu__link"><a href="javascript:void(0)">Служба поддержки</a></li>
+	</ul>
+	<div class="header__help-popup" style="display: none">
+		<p class="help-popup__text">Тел. поддержки</p>
+		<a href="tel:88001234567" class="help-popup__number">8 800 123-45-67</a>
+		<a href="mailto:example@mail.ru" class="help-popup__mail">Написать письмо</a>
+	</div>
+</header>
+
+<div class="find-block">
+	<div class="container">
+		<h2 class="find-block__title">Поиск начислений</h2>
+		<div class="find-block__search-wrap">
+			<input type="search" class="find-block__search-input" placeholder="Введите данные для поиска">
+			<a class="find-block__search-button">Найти</a>
+		</div>
+		<p class="find-block__text">Чем больше параметров введено, тем полнее результаты поиска</p>
+	</div>
+</div>
+
+<div class="page">
+	<div class="page-header container">
+		<h1 class="page-header__title">Здесь можно оплатить</h1>
+		<div class="page-header__tags">
+			<a href="#fine" class="page-header__tag">Штрафы ГИБДД</a>
+			<a href="#arrears" class="page-header__tag">Судебные задолженности</a>
+			<a href="#taxes" class="page-header__tag">Налоги</a>
+			<a href="#rosreestr" class="page-header__tag">Услуги Росреестра</a>
+			<span class="page-header__other">и другие услуги</span>
+		</div>
+	</div>
+
+	<h1 class="page__title-mobile">Узнайте, как оплатить</h1>
+
+	<div class="page__content-block img-right container" id="fine">
+		<div class="content-block__text-wrap">
+			<img src="img/ic_gibdd1.svg" class="mobile-serv-img"/>
+			<h3 class="content-block__main-title" data-status="close"><span>Штрафы ГИБДД</span></h3>
+			<p class="content-block__text">Для поиска укажите номера водительского удостоверения и свидетельства о регистрации
+				ТС или номер штрафа.</p>
+			<p class="content-block__text"> Если у вас есть на руках постановление о штрафе, вы можете указать реквизиты
+				самостоятельно.</p>
+			<h4 class="content-block__red-title">ПЛАТИТЬ ВОВРЕМЯ — ДЕШЕВЛЕ!</h4>
+			<p class="content-block__text">В первые 20 дней после выдачи постановления штраф можно оплатить со скидкой 50%.
+				Для своевременной оплаты штрафов настройте уведомления в Личном кабинете.</p>
+		</div>
+		<div class="content-block__img-wrap">
+			<img src="img/pic_block1.jpg"/>
+		</div>
+	</div>
+
+	<span class="page__content-separator"></span>
+
+	<div class="page__content-block img-left container" id="arrears">
+		<div class="content-block__text-wrap">
+			<img src="img/ic_fssp.svg" class="mobile-serv-img"/>
+			<h3 class="content-block__main-title" data-status="close"><span>Судебные задолженности</span></h3>
+			<p class="content-block__text">Для поиска начислений в ГИС ГМП укажите документы: паспорт РФ, ИНН, СНИЛС или номер
+				Исполнительного производства.</p>
+			<p class="content-block__text">Вы можете указать реквизиты платежа самостоятельно, заполнив форму.</p>
+			<h4 class="content-block__red-title">УДОБНО!</h4>
+			<p class="content-block__text">Судебные задолженности можно погасить как сразу, так и по частям, комфортными для
+				вас платежами. Информацию о совершенных платежах сохраняйте в Личном кабинете.</p>
+		</div>
+		<div class="content-block__img-wrap">
+			<img src="img/pic_block2.jpg"/>
+		</div>
+	</div>
+
+	<span class="page__content-separator"></span>
+
+	<div class="page__content-block img-right container" id="taxes">
+		<div class="content-block__text-wrap">
+			<img src="img/ic_nalog.svg" class="mobile-serv-img"/>
+			<h3 class="content-block__main-title" data-status="close"><span>Налоги</span></h3>
+			<p class="content-block__text">Для поиска начислений по налогам в ГИС ГМП укажите ИНН или Индекс налогового
+				документа, если у вас на руках есть квитанция.</p>
+			<h4 class="content-block__red-title">ВАЖНО!</h4>
+			<p class="content-block__text">Согласно законодательству РФ вы не можете оплачивать налоги за других физических
+				лиц. Принимаются только платежи физических лиц.</p>
+		</div>
+		<div class="content-block__img-wrap">
+			<img src="img/pic_block3.jpg"/>
+		</div>
+	</div>
+
+	<span class="page__content-separator"></span>
+
+	<div class="page__content-block img-left container" id="rosreestr">
+		<div class="content-block__text-wrap">
+			<img src="img/ic_rr.svg" class="mobile-serv-img"/>
+			<h3 class="content-block__main-title" data-status="close"><span>Услуги Росреестра</span></h3>
+			<p class="content-block__text">В поисковой строке укажите Код платежа, который был отправлен вам на почтовый ящик,
+				указанный при подаче запроса в Росреестре.</p>
+			<h4 class="content-block__red-title">НЕТ КОДА?</h4>
+			<p class="content-block__text">Если у вас ещё нет кода платежа, перейдите на сайт <a href="rosreestr.ru">rosreestr.ru</a>
+				и сформируйте запрос на оплату электронных услуг Росреестра.</p>
+		</div>
+		<div class="content-block__img-wrap">
+			<img src="img/pic_block4.jpg"/>
+		</div>
+	</div>
+
+</div>
+
+<div class="partners container">
+	<h3 class="partners-titel">С нами работают</h3>
+	<div class="partners-wrap">
+		<div class="partner-item">
+			<div class="partner-img">
+				<img src="img/logo_partner1.png"/>
+			</div>
+			<p class="partner-name">Партнёр 1</p>
+		</div>
+
+		<div class="partner-item">
+			<div class="partner-img">
+				<img src="img/logo_partner2.png"/>
+			</div>
+			<p class="partner-name">Компания-партнер с длинным названием</p>
+		</div>
+
+		<div class="partner-item">
+			<div class="partner-img">
+				<img src="img/logo_partner3.png"/>
+			</div>
+			<p class="partner-name">Партнёр 3</p>
+		</div>
+
+		<div class="partner-item">
+			<div class="partner-img">
+				<img src="img/logo_partner4.png"/>
+			</div>
+			<p class="partner-name">Название партнёра 4</p>
+		</div>
+
+		<div class="partner-item">
+			<div class="partner-img">
+				<img src="img/logo_partner5.png"/>
+			</div>
+			<p class="partner-name">Компания-партнёра 5</p>
+		</div>
+
+		<div class="partner-item">
+			<div class="partner-img">
+				<img src="img/logo_partner6.png"/>
+			</div>
+			<p class="partner-name">Партнер 6
+				с длинным названием</p>
+		</div>
+	</div>
+</div>
+
+<footer class="footer">
+		<p class="footer__text">© 2012 – 2020
+ООО «Название компании»</p>
+		<img class="footer__img" src="img/comodossl-trustlogo2.png"/>
+</footer>
+
+<div class="modal-wrap" style="display: none">
+	<div class="auth-form-wrap form-wrap" style="display: none" id="authForm">
+		<a href="javascript:void(0)" class="form-closer"></a>
+		<p class="form-name">Введите логин и пароль для входа в Личный кабинет</p>
+		<form class="form" action="#" method="post">
+			<input type="email" name="auth_email" placeholder="Логин" required >
+			<input type="password" name="auth_pass" placeholder="Пароль" required >
+			<button class="form__button" type="submit" name="form_auth_submit">Войти</button>
+		</form>
+		<a href="javascript:void(0)" class="form-link">Напомнить пароль</a>
+		<a href="javascript:void(0)" class="form-link">Регистрация</a>
+	</div>
+</div>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
